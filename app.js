@@ -15,8 +15,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 const host = '0.0.0.0';
-app.listen(process.env.PORT || 8000, host, ()=> {
-    console.log("App started at port 8000" );
+app.listen(process.env.PORT || 80, ()=> {
+    console.log("App started at port 80" );
 });
 
 app.use(logger('dev'));
